@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="header navbar navbar-expand-xl px-5 py-3 w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold fs-2" href="index.html">Cyber</a>
+        <button class="button-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <form class="d-flex ms-auto me-auto" role="search">
+                <button class="border-0 bg-transparent fs-4" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="bg-transparent rounded-3 px-5 py-3" type="search" placeholder="Search" aria-label="Search"/>
+            </form>
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item me-4"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="product-details.html">Product Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="p-2 d-flex align-items-center gap-2">
+                <a href="#"><i class="fa-solid fa-heart fs-4 me-3"></i></a>
+                <a href="cart.html" style="position:relative;"><i class="fa-solid fa-cart-shopping fs-4 me-3"></i></a>
+                <a href="#"><i class="fa-solid fa-user fs-4"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="products container mb-5">
+    <nav class="my-5">
+        <a href="index.html" class="text-decoration-none text-secondary me-4">Home <i class="fa-solid fa-angle-right"></i></a>
+        <a href="" class="text-decoration-none text-secondary me-4">Catalog <i class="fa-solid fa-angle-right"></i></a>
+        <a href="" class="text-decoration-none text-white">Smartphones</a>
+    </nav>
+
+    <section class="smartphones row gap-3">
+        <!-- Sidebar -->
+        <section class="filter-sidebar col-12 col-lg-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header">
+                        <button class="border-0 bg-transparent border-bottom text-white w-100 p-3 fs-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Brand <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="d-flex flex-column gap-4">
+                                <form action="#" method="post" class="position-relative" id="search-brand">
+                                    <button type="submit" class="border-0 bg-transparent fs-4"><i class="fa-solid fa-magnifying-glass position-absolute text-white"></i></button>
+                                    <input type="search" placeholder="Search" class="bg-transparent px-5 py-2 rounded-3 w-100">
+                                </form>
+                                <form action="#" method="post" class="ms-2 d-flex flex-column gap-3">
+                                    <div><input type="checkbox" id="check-apple" class="brand-filter me-3" value="apple"><label for="check-apple" class="fs-5 text-white">Apple 110</label></div>
+                                    <div><input type="checkbox" id="check-samsung" class="brand-filter me-3" value="samsung"><label for="check-samsung" class="fs-5 text-white">Samsung 125</label></div>
+                                    <div><input type="checkbox" id="check-xiaomi" class="brand-filter me-3" value="xiaomi"><label for="check-xiaomi" class="fs-5 text-white">Xiaomi 68</label></div>
+                                    <div><input type="checkbox" id="check-poco" class="brand-filter me-3" value="poco"><label for="check-poco" class="fs-5 text-white">Poco 44</label></div>
+                                    <div><input type="checkbox" id="check-oppo" class="brand-filter me-3" value="oppo"><label for="check-oppo" class="fs-5 text-white">OPPO 36</label></div>
+                                    <div><input type="checkbox" id="check-honor" class="brand-filter me-3" value="honor"><label for="check-honor" class="fs-5 text-white">Honor 10</label></div>
+                                    <div><input type="checkbox" id="check-motorola" class="brand-filter me-3" value="motorola"><label for="check-motorola" class="fs-5 text-white">Motorola 34</label></div>
+                                    <div><input type="checkbox" id="check-nokia" class="brand-filter me-3" value="nokia"><label for="check-nokia" class="fs-5 text-white">Nokia 22</label></div>
+                                    <div><input type="checkbox" id="check-realme" class="brand-filter me-3" value="realme"><label for="check-realme" class="fs-5 text-white">Realme 35</label></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="border-0 bg-transparent border-bottom text-white w-100 p-3 pt-5 fs-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false">
+                                Battery capacity <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse">
+                            <div class="accordion-body text-white">Battery capacity filters</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0">
+                        <h2 class="accordion-header">
+                            <button class="border-0 bg-transparent text-white w-100 p-3 pt-5 fs-4 d-flex justify-content-between" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false">
+                                Price Range <i class="fa-solid fa-chevron-down"></i>
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse border-top">
+                            <div class="accordion-body text-white">Price range filters</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="col">
+            <div class="products-container my-4">
+                <div class="row gap-3">
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="apple" data-id="pr1" data-name="Apple iPhone 14 Pro 512GB Gold" data-price="1437" data-img="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png">
+                        <img src="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+                        <h2 class="mb-3">$1437</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="samsung" data-id="pr2" data-name="Apple iPhone 11 128GB White" data-price="510" data-img="photo/34cebf757f8dea2a7d3639bb78713105f1431309.png">
+                        <img src="photo/34cebf757f8dea2a7d3639bb78713105f1431309.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 11 128GB White (MQ233)</p>
+                        <h2 class="mb-3">$510</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="xiaomi" data-id="pr3" data-name="Apple iPhone 11 128GB White" data-price="550" data-img="photo/34cebf757f8dea2a7d3639bb78713105f1431309.png">
+                        <img src="photo/34cebf757f8dea2a7d3639bb78713105f1431309.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 11 128GB White (MQ233)</p>
+                        <h2 class="mb-3">$550</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="poco" data-id="pr4" data-name="Apple iPhone 14 Pro 1TB Gold" data-price="1499" data-img="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png">
+                        <img src="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</p>
+                        <h2 class="mb-3">$1499</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="oppo" data-id="pr5" data-name="Apple iPhone 14 Pro 1TB Gold" data-price="1399" data-img="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png">
+                        <img src="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</p>
+                        <h2 class="mb-3">$1399</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="honor" data-id="pr6" data-name="Apple iPhone 14 Pro 128GB Deep Purple" data-price="1600" data-img="photo/35bbde0c991501fab467b7b89b3d15a3022907d7.png">
+                        <img src="photo/35bbde0c991501fab467b7b89b3d15a3022907d7.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 128GB Deep Purple (MQ0G3)</p>
+                        <h2 class="mb-3">$1600</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="motorola" data-id="pr7" data-name="Apple iPhone 13 mini 128GB Pink" data-price="850" data-img="photo/6cfe0b09d9117ef7d870d16c2ee487ae54daf98a.png">
+                        <img src="photo/6cfe0b09d9117ef7d870d16c2ee487ae54daf98a.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 13 mini 128GB Pink (MLK23)</p>
+                        <h2 class="mb-3">$850</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="nokia" data-id="pr8" data-name="Apple iPhone 14 Pro 256GB Space Black" data-price="1399" data-img="photo/2b12e06b5f2b9bbd5cdc31ba14fe87f3c707b098.png">
+                        <img src="photo/2b12e06b5f2b9bbd5cdc31ba14fe87f3c707b098.png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 256GB Space Black (MQ0T3)</p>
+                        <h2 class="mb-3">$1399</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                    <div class="cards col rounded-3 p-4 d-flex flex-column align-items-center justify-content-end position-relative" data-brand="realme" data-id="pr9" data-name="Apple iPhone 14 Pro 256GB Silver" data-price="1399" data-img="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png">
+                        <img src="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png" alt="" width="160px">
+                        <p class="text-center mt-3">Apple iPhone 14 Pro 256GB Silver (MQ103)</p>
+                        <h2 class="mb-3">$1399</h2>
+                        <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                        <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+                    </div>
+
+                </div>
+            </div>
+            <nav aria-label="Page navigation" class="pagination-container pt-5">
+                <ul class="pagination w-100 d-flex justify-content-center gap-4">
+                    <li class="page-item"><a class="left page-link border-0" href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                    <div class="d-flex gap-2">
+                        <li class="page-item"><a class="page-number page-link border-0 rounded-3" href="#">1</a></li>
+                        <li class="page-item"><a class="page-number page-link border-0 rounded-3" href="#">2</a></li>
+                        <li class="page-item"><a class="page-number page-link border-0 rounded-3" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link border-0 text-white bg-transparent" href="#">....</a></li>
+                        <li class="page-item"><a class="page-number page-link border-0 rounded-3" href="#">12</a></li>
+                    </div>
+                    <li class="page-item"><a class="right page-link border-0" href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </section>
+</section>
+
+<!-- FOOTER -->
+<footer class="row gap-4 align-items-start bg-black" id="footer">
+    <div class="col">
+        <a href="#" class="text-decoration-none text-white fw-bold fs-2">Cyber</a>
+        <p class="text-white mt-4">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+    </div>
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Services</h5>
+        <a href="" class="text-decoration-none">Bonus program</a>
+        <a href="" class="text-decoration-none">Gift cards</a>
+        <a href="" class="text-decoration-none">Credit and payment</a>
+        <a href="" class="text-decoration-none">Service contracts</a>
+        <a href="" class="text-decoration-none">Non-cash account</a>
+        <a href="" class="text-decoration-none">Payment</a>
+    </div>
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Assistance to the buyer</h5>
+        <a href="" class="text-decoration-none">Find an order</a>
+        <a href="" class="text-decoration-none">Terms of delivery</a>
+        <a href="" class="text-decoration-none">Exchange and return of goods</a>
+        <a href="" class="text-decoration-none">Guarantee</a>
+        <a href="" class="text-decoration-none">Frequently asked questions</a>
+        <a href="" class="text-decoration-none">Terms of use of the site</a>
+    </div>
+    <div class="mt-5 d-flex align-items-center gap-5">
+        <a href=""><i class="fa-brands fa-twitter fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fs-5 text-white"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cyber</title>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="header navbar navbar-expand-xl px-5 py-3 w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold fs-2" href="index.html">Cyber</a>
+        <button class="button-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <form class="d-flex ms-auto me-auto" role="search">
+                <button class="border-0 bg-transparent fs-4" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="bg-transparent rounded-3 px-5 py-3" type="search" placeholder="Search" aria-label="Search"/>
+            </form>
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item me-4"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="product-details.html">Product Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="p-2 d-flex align-items-center gap-2">
+                <a href="#"><i class="fa-solid fa-heart fs-4 me-3"></i></a>
+                <a href="cart.html" style="position:relative;"><i class="fa-solid fa-cart-shopping fs-4 me-3"></i></a>
+                <a href="#"><i class="fa-solid fa-user fs-4"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section mt-5">
+    <div class="container-1 container-fluid d-flex flex-wrap align-items-center justify-content-center">
+        <div class="mb-4 fade-up">
+            <span class="text-secondary fw-bold fs-5">Pro.Beyond.</span>
+            <h1 class="text-white">IPhone 14 <span class="fw-bold">Pro</span></h1>
+            <p class="text-secondary">Created to change everything for the better. For everyone</p>
+            <a href="products.html" class="text-decoration-none rounded-3 px-5 py-3">Shop Now</a>
+        </div>
+        <img src="photo/20ae4cc7d95ed194279d337796d951679b146d4a.png" alt="iPhone 14 Pro">
+    </div>
+
+    <div class="container-parent">
+        <div class="container-2 d-flex align-items-center">
+            <img src="photo/1c360f790c1817d3afa266b3c9f8c81ff0ed4428.png" alt="" width="360px">
+            <div>
+                <h2>Playstation 5</h2>
+                <p class="text-secondary">Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation experience.</p>
+            </div>
+        </div>
+        <div class="container-3 d-flex align-items-center gap-5">
+            <img src="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png" alt="" width="200px">
+            <div>
+                <h2>Apple AirPods <span class="fw-bold">Max</span></h2>
+                <p class="text-secondary">Computational audio. Listen, it's powerful</p>
+            </div>
+        </div>
+        <div class="container-4 d-flex align-items-center">
+            <img src="photo/c10d86201d5d593c85eadbb74bd5d5697aa4eb85.png" alt="" width="300px">
+            <div>
+                <h2>Apple Vision <span class="fw-bold">Pro</span></h2>
+                <p class="text-secondary">An immersive way to experience <br>entertainment</p>
+            </div>
+        </div>
+        <div class="container-5 d-flex align-items-center">
+            <div>
+                <h2>Macbook <span class="fw-bold">Air</span></h2>
+                <p class="text-secondary mb-4">The new 15-inch MacBook Air makes room for more of what you love with a spacious Liquid Retina display.</p>
+                <a href="products.html" class="text-decoration-none rounded-3 px-5 py-3">Shop Now</a>
+            </div>
+            <img src="photo/MacBook Pro 14.png" alt="" height="450px">
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="category py-5">
+    <div class="container">
+        <div class="fade-up"><h2>Browse By Category</h2></div>
+        <div class="categories-container row gap-5 my-4">
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <i class="fa-solid fa-mobile-screen-button fs-3 text-white mb-2"></i>
+                <a href="products.html" class="text-decoration-none">Phones</a>
+            </div>
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <img src="photo/icons8-smart-watch-50 (1).png" alt="" width="35px" class="mb-2">
+                <a href="products.html" class="text-decoration-none text-center">Smart Watches</a>
+            </div>
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <i class="fa-regular fa-camera fs-3 text-white mb-2"></i>
+                <a href="products.html" class="text-decoration-none">Cameras</a>
+            </div>
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <i class="fa-regular fa-headphones fs-3 text-white mb-2"></i>
+                <a href="products.html" class="text-decoration-none">Headphones</a>
+            </div>
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <i class="fa-solid fa-desktop fs-3 text-white mb-2"></i>
+                <a href="products.html" class="text-decoration-none">Computers</a>
+            </div>
+            <div class="py-4 px-3 rounded-3 d-flex flex-column align-items-center col">
+                <i class="fa-solid fa-gamepad fs-3 text-white mb-2"></i>
+                <a href="products.html" class="text-decoration-none">Gaming</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEW ARRIVAL -->
+<section class="arrival container my-5">
+    <nav class="fade-up">
+        <a href="#">New Arrival</a>
+        <a href="#">Bestseller</a>
+        <a href="#">Featured Products</a>
+    </nav>
+    <div class="container container-cart mt-4">
+        <div class="row gap-3">
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p1" data-name="Apple iPhone 14 Pro Max 128GB Deep Purple" data-price="900" data-img="photo/35bbde0c991501fab467b7b89b3d15a3022907d7.png">
+                <img src="photo/35bbde0c991501fab467b7b89b3d15a3022907d7.png" alt="" width="160px">
+                <p class="text-center mt-3">Apple iPhone 14 Pro Max<br>128GB Deep Purple</p>
+                <h2 class="mb-3">$900</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p2" data-name="Blackmagic Pocket Cinema Camera 6k" data-price="2535" data-img="photo/816985a91aabaacc323e5b7f20ae5cf40933393a.png">
+                <img src="photo/816985a91aabaacc323e5b7f20ae5cf40933393a.png" alt="" width="160px">
+                <p class="text-center mt-3">Blackmagic Pocket Cinema Camera 6k</p>
+                <h2 class="mb-3">$2535</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p3" data-name="Apple Watch Series 9 GPS 41mm Starlight" data-price="399" data-img="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png">
+                <img src="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png" alt="" width="160px">
+                <p class="text-center mt-3">Apple Watch Series 9 GPS 41mm Starlight Aluminium</p>
+                <h2 class="mb-3">$399</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p4" data-name="AirPods Max Silver Starlight Aluminium" data-price="549" data-img="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png">
+                <img src="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png" alt="" width="160px">
+                <p class="text-center mt-3">AirPods Max Silver Starlight Aluminium</p>
+                <h2 class="mb-3">$549</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+        </div>
+        <div class="row gap-3 mt-4">
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p5" data-name="Samsung Galaxy Watch6 Classic 47mm Black" data-price="369" data-img="photo/70f78d5e06c6dd2cbcae636ea9344264570b9022.png">
+                <img src="photo/70f78d5e06c6dd2cbcae636ea9344264570b9022.png" alt="" width="150px">
+                <p class="text-center mt-3">Samsung Galaxy Watch6 Classic 47mm Black</p>
+                <h2 class="mb-3">$369</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p6" data-name="Galaxy Z Fold5 256GB Phantom Black" data-price="1799" data-img="photo/10787914a0ffcff215f824ce6b4ece364fd8757e.png">
+                <img src="photo/10787914a0ffcff215f824ce6b4ece364fd8757e.png" alt="" width="160px">
+                <p class="text-center mt-3">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</p>
+                <h2 class="mb-3">$1799</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p7" data-name="Galaxy Buds FE Graphite" data-price="99.99" data-img="photo/efc971fbc0c0ba87919da1b52c3f38a360bd53f5.png">
+                <img src="photo/efc971fbc0c0ba87919da1b52c3f38a360bd53f5.png" alt="" width="160px">
+                <p class="text-center mt-3">Galaxy Buds FE Graphite</p>
+                <h2 class="mb-3">$99.99</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+            <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+                 data-id="p8" data-name="Apple iPad 9 10.2&quot; 64GB Wi-Fi Silver 2021" data-price="398" data-img="photo/7609e5cdf4f1449533f9f5a48db3baede928c3bc.png">
+                <img src="photo/7609e5cdf4f1449533f9f5a48db3baede928c3bc.png" alt="" width="160px">
+                <p class="text-center mt-3">Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</p>
+                <h2 class="mb-3">$398</h2>
+                <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+                <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section class="products-section row">
+    <div class="product-card-1 d-flex flex-column align-items-center p-4 col">
+        <img src="photo/Popular-Products.png" alt="" width="250px" class="mb-5">
+        <div class="text-center">
+            <h2 class="text-white text-center mb-3">Popular Products</h2>
+            <p class="text-secondary mt-3 mb-4">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+            <a href="products.html" class="text-decoration-none py-3 px-5 rounded-3">Shop Now</a>
+        </div>
+    </div>
+    <div class="product-card-2 d-flex flex-column align-items-center p-4 col">
+        <img src="photo/03f88b4cbe5df929ebde7688c573f3bf280a1c07.png" alt="" width="200px" class="mb-5">
+        <div class="mt-2 text-center">
+            <h2 class="mb-3">Ipad Pro</h2>
+            <p class="text-secondary mt-3 mb-4">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+            <a href="products.html" class="text-decoration-none py-3 px-5 rounded-3">Buy Now</a>
+        </div>
+    </div>
+    <div class="product-card-3 d-flex flex-column align-items-center p-4 col">
+        <img src="photo/42ede37f5b7179151ff1aece13de5d13a9577763.png" alt="" width="160px" class="mb-5">
+        <div class="text-center">
+            <h2 class="mb-3">Samsung Galaxy</h2>
+            <p class="text-secondary mt-3 mb-4">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+            <a href="products.html" class="text-decoration-none py-3 px-5 rounded-3">Buy Now</a>
+        </div>
+    </div>
+    <div class="product-card-4 d-flex flex-column align-items-center p-4 col">
+        <img src="photo/841a21892886e7ecb5d47ea5c6ae4bebd8ac7b6a.png" alt="" width="250px" class="mb-5 pt-4">
+        <div class="mt-5 text-center">
+            <h2 class="text-white mb-3">Macbook Pro</h2>
+            <p class="text-secondary mt-3 mb-4">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.</p>
+            <a href="products.html" class="text-decoration-none py-3 px-5 rounded-3">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- DISCOUNTS -->
+<section class="discounts-container container">
+    <h2 class="fade-up">Discounts up to -50%</h2>
+    <div class="mt-4 row gap-3">
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d1" data-name="Apple iPhone 14 Pro 512GB Gold" data-price="1437" data-img="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png">
+            <img src="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png" alt="" width="160px">
+            <p class="text-center mt-3">Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+            <h2 class="mb-3">$1437</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d2" data-name="AirPods Max Silver Starlight Aluminium" data-price="549" data-img="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png">
+            <img src="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png" alt="" width="160px">
+            <p class="text-center mt-3">AirPods Max Silver Starlight Aluminium</p>
+            <h2 class="mb-3">$549</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d3" data-name="Apple Watch Series 9 GPS 41mm Starlight" data-price="399" data-img="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png">
+            <img src="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png" alt="" width="160px">
+            <p class="text-center mt-3">Apple Watch Series 9 GPS 41mm Starlight Aluminium</p>
+            <h2 class="mb-3">$399</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d4" data-name="Apple iPhone 14 Pro 1TB Gold" data-price="1499" data-img="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png">
+            <img src="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png" alt="" width="160px">
+            <p class="text-center mt-3">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</p>
+            <h2 class="mb-3">$1499</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- SALE -->
+<section class="sale-container d-flex flex-column align-items-center justify-content-center">
+    <h2 class="text-white">Big Summer <span class="fw-bold">Sale</span></h2>
+    <p class="text-secondary">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+    <a href="products.html" class="text-decoration-none py-3 px-5 rounded-3">Shop Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer class="row gap-4 align-items-start bg-black" id="footer">
+    <div class="col">
+        <a href="#" class="text-decoration-none text-white fw-bold fs-2">Cyber</a>
+        <p class="text-white mt-4">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+    </div>
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Services</h5>
+        <a href="" class="text-decoration-none">Bonus program</a>
+        <a href="" class="text-decoration-none">Gift cards</a>
+        <a href="" class="text-decoration-none">Credit and payment</a>
+        <a href="" class="text-decoration-none">Service contracts</a>
+        <a href="" class="text-decoration-none">Non-cash account</a>
+        <a href="" class="text-decoration-none">Payment</a>
+    </div>
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Assistance to the buyer</h5>
+        <a href="" class="text-decoration-none">Find an order</a>
+        <a href="" class="text-decoration-none">Terms of delivery</a>
+        <a href="" class="text-decoration-none">Exchange and return of goods</a>
+        <a href="" class="text-decoration-none">Guarantee</a>
+        <a href="" class="text-decoration-none">Frequently asked questions</a>
+        <a href="" class="text-decoration-none">Terms of use of the site</a>
+    </div>
+    <div class="mt-5 d-flex align-items-center gap-5">
+        <a href=""><i class="fa-brands fa-twitter fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fs-5 text-white"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Details</title>
+</head>
+<body>
+
+<!-- -----------------------------navbar-------------------------------- -->
+
+<nav class="header navbar navbar-expand-xl px-5 py-3 w-100">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold fs-2" href="index.html">Cyber</a>
+        <button class="button-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <form class="d-flex ms-auto me-auto" role="search">
+                <button class="border-0 bg-transparent fs-4" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="bg-transparent rounded-3 px-5 py-3" type="search" placeholder="Search" aria-label="Search"/>
+            </form>
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item me-4"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item me-4"><a class="nav-link" href="product-details.html">Product Details</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="p-2 d-flex align-items-center gap-2">
+                <a href="#"><i class="fa-solid fa-heart fs-4 me-3"></i></a>
+                <a href="cart.html" style="position:relative;"><i class="fa-solid fa-cart-shopping fs-4 me-3"></i></a>
+                <a href="#"><i class="fa-solid fa-user fs-4"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="products-breadcrumbs px-5 py-4 container">
+    <a href="" class="text-decoration-none text-secondary">Home <i class="fa-solid fa-angle-right"></i></a>
+    <a href="" class="text-decoration-none text-secondary">Smartphones <i class="fa-solid fa-angle-right"></i></a>
+    <a href="" class="text-decoration-none text-white">iPhone 14 Pro Max</a>
+</nav>
+
+
+<section id="iPhone 14 Pro Max" class="iPhone 14 Pro Max mb-5">
+    <!-- ==================left side:images================== -->
+    <div class="container row d-flex justify-content-center iPhone">
+        <div class="col-6 ">
+            <div class="row align-items-center container gallery">
+                <div class="d-flex flex-column align-items-center col-md-2 thumbnails">
+                    <img src="photo/Image.png" class="small-img mb-3" width="60px">
+                    <img src="photo/WhatsApp_Image_2025-11-22_at_7.39.20_PM-removebg-preview.png" class="small-img mb-3" width="40px">
+                    <img src="photo/WhatsApp_Image_2025-11-22_at_7.39.20_PM__1_-removebg-preview.png" class="small-img mb-3" width="40px">
+                    <img src="photo/WhatsApp_Image_2025-11-22_at_7.39.20_PM__2_-removebg-preview.png" class="small-img mb-3" width="40px">
+                </div>
+
+                <div class="col-6">
+                    <img src="photo/Image.png" class="big-img" id="mainImg" alt="">
+                </div>
+            </div>
+        </div>
+<!-- ==================right side================== -->
+        <div class="col-md-6 right-side">
+            <h1 class="row text-white"> Apple iPhone 14 Pro Max</h1>
+            <h3 class="mt-3" id="current-price">$1399</h3>
+            <div class="color-options fw-bold h6"> 
+                <span class="h5 mt-2 text-white" >Select color:</span>
+
+                <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off">
+                <label class="btn circle p-3 color-option" style="background-color: #781DBC;" for="option5"></label>
+
+                <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                <label class="btn circle p-3 color-option" style="background-color: #E10000;" for="option6"></label>
+
+                <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off">
+                <label class="btn circle p-3 color-option" style="background-color: #E1B000;" for="option7"></label>
+
+                <input type="radio" class="btn-check" name="options-base" id="option8" autocomplete="off">
+                <label class="btn circle p-3 color-option" style="background-color: #1A4EEC;" for="option8"></label>
+
+                <input type="radio" class="btn-check" name="options-base" id="option9" autocomplete="off">
+                <label class="btn circle p-3 color-option" style="background-color: #c8c0c9;" for="option9"></label>
+            </div>
+
+
+            <div role="group" class="p-2">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked data-price="1399">
+                <label class="unit btn btn-light rounded-2 px-4 py-2 m-1 bg-transparent text-white" for="btnradio1">128GB</label>
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-price="1499">
+                <label class="unit btn btn-light rounded-2 px-4 py-2 m-1 bg-transparent text-white" for="btnradio2">256GB</label>
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" data-price="1699">
+                <label class="unit btn btn-light rounded-2 px-4 py-2 m-1 bg-transparent text-white" for="btnradio3">512GB</label>
+                
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" data-price="1899">
+                <label class="unit btn btn-light rounded-2 px-4 py-2 m-1 bg-transparent text-white" for="btnradio4">1TB</label>
+            </div>
+
+
+            <div class="row d-flex iPhone-items ">
+                <div class="col-md-3 data rounded-3 ">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3">
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Screen size</div>
+                            <p class="text-white">6.7 ``</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 data rounded-3">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">CPU</div>
+                            <p class="text-white">Apple A16 Bionic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 data rounded-3">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3 ">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Numberof Cores</div>
+                            <p class="text-white">6</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 data rounded-3">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3 ">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Main Camera</div>
+                            <p class="text-white">48-12-12 MP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 data rounded-3">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3 ">
+                            <i class="fa-solid fa-camera-rotate"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Front-camera</div>
+                            <p class="text-white">12 MP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 data rounded-3 ">
+                    <div class="p-2 d-flex">
+                        <div class="col-md-2 mt-3">
+                            <i class="fa-solid fa-battery-half"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Battery Capacity</div>
+                            <p class="text-white">4323 mAh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class=" row">
+                <p class="col-md-12 p-iphone mt-3 text-white">
+                    Enhanced capabilities thanks toan enlarged display of 6.7 inchesand work without rechargingthroughout the day. 
+                    Incredible photosas in weak, yesand in bright lightusing the new systemwith two cameras
+                    <span class="border-bottom border-white fw-bold border-dark border-2" >more...</span>
+                </p>
+            </div>
+
+            <div class="pb-2 mt-4 d-flex gap-2">
+                <button class="btn-add btn btn-light bg-transparent text-white me-2" id="btn-wishlist">
+                    <i class="fa-regular fa-heart"></i> Add to Wishlist
+                </button>
+                <button class="btn-add btn-add-cart" id="btn-add-to-cart"
+                    data-id="iphone14promax"
+                    data-name="Apple iPhone 14 Pro Max"
+                    data-price="1399"
+                    data-img="photo/Image.png">
+                    <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                </button>
+            </div>
+
+            <div class="row d-flex mt-4">
+                <div class="col-md-4 data rounded-3">
+                    <div class="row d-flex">
+                        <div class="col-md-2 mt-3  ">
+                            <i class="fa-solid fa-truck text-white"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Free Delivery</div>
+                            <p class="text-white">1-2 day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 data  rounded-3">
+                    <div class="row d-flex">
+                        <div class="col-md-2 mt-2 ">
+                            <i class="fa-solid fa-check-circle text-white"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">in stock</div>
+                            <p class="text-white">Today</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 data rounded-3">
+                    <div class="row d-flex">
+                        <div class="col-md-2 mt-3">
+                            <i class="fa-regular fa-circle-check text-white"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <div class="text-white">Guaranteed</div>
+                            <p class="text-white">1 Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Details -------------------------->
+
+<section class="big-Details pt-5 pb-5">
+    <div class="Details container justify-content-center rounded-4">
+        <h3 class="pt-5 ps-4">Details</h3>
+        <p class="p-4 text-white Details-p">Just as a book is judged by its cover, the first thing you notice when you pick up a modern smartphone is the display. Nothing surprising, because advanced technologies allow you to practically level the display frames and cutouts for the front camera and speaker, leaving no room for bold design solutions. And how good that in such realities Apple everything is fine with displays. Both critics and mass consumers always praise the quality of the picture provided by the products of the Californian brand. And last year's 6.7-inch Retina panels, which had ProMotion, caused real admiration for many.</p>
+        <div class="screen container">
+            <h3 class="pt-2 ps-4">Screen</h3>
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">Screen diagonal<span class="pe-4">6.7 </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white"> The Screen resolution<span class="pe-4">2796*1290 </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white"> The Screen refresh rate<span class="pe-4">120 Hz </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">The pixel density<span class="pe-4">460 ppi </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">Screen type<span class="pe-4">OLED </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">Additionally
+                <span class="pe-4">Dynamic Island Always-On display HDR displayTrue ToneWide color (P3) </span></p>
+            </div>
+
+            <div class="row">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">CPU
+                <span class="pe-4">A16 Bionic </span></p>
+            </div>
+
+            <div class="row border-0">
+                <p class="d-flex justify-content-between align-items-center ps-4 pt-2 text-white">Number of cores<span class="pe-4">6 </span></p>
+            </div>
+        </div>
+
+        <div class="text-center pb-4">
+            <button class="btn px-5 py-1 rounded-2 text-white btn-2">View More <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+    </div>
+</section>
+
+<!------------------------- Reviews ------------------------->
+
+<section class="big-Reviews m-5">
+    <div class="Reviews container">
+        <h3 class="px-5 text-white">Reviews</h3>
+        <div class="row box-reviews">
+            <div class="col-md-4 rounded-5 justify-content-center container reviews-item pt-3">
+                <h2 class="text-center fw-bold text-white">4.8</h2>
+                <p class="text-center text-white">of 125 reviews</p>
+                <div class="text-center">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half text-warning"></i>
+                </div>
+            </div>
+
+            <div class="col-md-8 pt-3 ">
+                <div class="d-flex align-items-center mb-2">
+                    <h6 class="h6 col-md-3 text-white">Excellent</h6>
+                    <div class="progress col-md-6 mt-2">
+                        <div class="progress-bar bg-warning " role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" ></div>
+                    </div>
+                    <span class="col-md-3 text-white ms-3">100</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <h6 class="col-md-3 text-white">Good</h6>
+                    <div class="progress col-md-6 mt-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+                    </div>
+                    <span class="col-md-3 text-white ms-3">11</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <div class="h6 col-md-3 text-white">Average</div>
+                    <div class="progress col-md-6 mt-2">
+                        <div class="progress-bar bg-warning " role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="25" ></div>
+                    </div>
+                    <span class="col-md-3 text-white ms-3">3</span>
+                </div>
+
+                <div class="d-flex align-items-center mb-2">
+                    <div class="h6 col-md-3 text-white">Below Average </div>
+                    <div class="progress col-md-6 mt-2">
+                        <div class="progress-bar bg-warning " role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50" ></div>
+                    </div>
+                    <span class="col-md-3 text-white ms-3">8</span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                    <div class="h6 col-md-3 text-white">Poor</div>
+                    <div class="progress col-md-6 mt-2">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10 " ></div>
+                    </div>
+                    <span class="col-md-3 text-white ms-3">1</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-3 px-5" >
+        <input type="text" class="leave-comment w-100 rounded-2 py-2 px-3" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="leave Comment">
+    </div>  
+
+    <div class="container pt-4">
+        <div class="review row container rounded-3 ">
+            <div><img src="photo/User Pic.png" class="mt-3"><span class="h6 ps-4">Grace Carey</span></div>
+            <div class=" ms-5 mb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star  text-white"></i>
+            </div>
+
+            <p class="container ps-5 mb-3 p-rev">
+                I was a bit nervous to be buying a secondhand phone from Amazon, but I couldn’t be happier with my purchase!! I have a pre-paid data plan so I was 
+                worried that this phone wouldn’t connect with my data plan, since the new phones don’t have the physical Sim tray anymore, but couldn’t have been easier! I bought 
+                an Unlocked black iPhone 14 Pro Max in excellent condition and everything is 
+                PERFECT. It was super easy to set up and the phone works and looks great. It truly was in excellent condition. Highly recommend!!!🖤
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container pt-4">
+        <div class="review row container rounded-3 ">
+            <div><img src="photo/User Pic (1).png" class="mt-3"><span class="h6 ps-4">Grace Carey</span></div>
+            <div class=" ms-5 mb-2 ">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+            </div>
+
+            <p class=" container ps-5 mb-3 p-rev">
+                This phone has 1T storage and is durable. Plus all the new iPhones have a C port! Apple is phasing 
+                out the current ones! (All about the Benjamin’s) So if you want a phone that’s going to last grab an 
+                iPhone 14 pro max and get several cords and plugs.
+            </p>
+        </div>
+    </div>
+
+    <div class="container pt-4">
+        <div class="review row container rounded-3 ">
+            <div><img src="photo/User Pic (2).png" class="mt-3"><span class="h6 ps-4">Grace Carey</span></div>
+            <div class=" ms-5 mb-2">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star  text-white  border-warning"></i>
+            </div>
+
+            <p class="container ps-5 mb-3 p-rev">
+                I might be the only one to say this but the camera is a little funky. Hoping it will 
+                change with a software update: otherwise, love this phone! Came in great condition
+            </p>
+
+            <div class="ps-5 mb-3 ">
+                <img src="photo/Review=Image1.png" class="me-2 ">
+                <img src="photo/Review=Image2.png"></div>
+            </div>
+        </div>
+
+        <div class="  text-center pt-4">
+            <button class="btn px-5 py-1 rounded-2 text-white btn-2">View More <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+    </div>
+</section>
+
+<!--------------------------- cards ---------------------------->
+
+<section class="discounts-container container">
+    <h2 class="fade-up">Discounts up to -50%</h2>
+    <div class="mt-4 row gap-3">
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d1" data-name="Apple iPhone 14 Pro 512GB Gold" data-price="1437" data-img="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png">
+            <img src="photo/75e9511b54189b8ee3104a701ea71c524e6521e4.png" alt="" width="160px">
+            <p class="text-center mt-3">Apple iPhone 14 Pro 512GB Gold (MQ233)</p>
+            <h2 class="mb-3">$1437</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d2" data-name="AirPods Max Silver Starlight Aluminium" data-price="549" data-img="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png">
+            <img src="photo/862f3bde7875d13ee02e9b629cda7dc570b6e510.png" alt="" width="160px">
+            <p class="text-center mt-3">AirPods Max Silver Starlight Aluminium</p>
+            <h2 class="mb-3">$549</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d3" data-name="Apple Watch Series 9 GPS 41mm Starlight" data-price="399" data-img="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png">
+            <img src="photo/cb39cda1a785d83ac87bef6f733e89566466ab68.png" alt="" width="160px">
+            <p class="text-center mt-3">Apple Watch Series 9 GPS 41mm Starlight Aluminium</p>
+            <h2 class="mb-3">$399</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+        <div class="cards rounded-3 p-3 d-flex flex-column align-items-center justify-content-end position-relative col"
+            data-id="d4" data-name="Apple iPhone 14 Pro 1TB Gold" data-price="1499" data-img="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png">
+            <img src="photo/91a91f9fa51ffe2dcd3c8c730f33e506dd49f245 (1).png" alt="" width="160px">
+            <p class="text-center mt-3">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</p>
+            <h2 class="mb-3">$1499</h2>
+            <button class="btn-add-cart mb-1"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+            <button class="border-0 bg-transparent"><i class="fa-regular fa-heart fs-3 m-3 text-white position-absolute top-0 end-0"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- -------------------------------Footer-------------------------------- -->
+
+<footer class="row gap-4 align-items-start bg-black mt-5" id="footer">
+    <div class="col">
+        <a href="#" class="text-decoration-none text-white fw-bold fs-2">Cyber</a>
+        <p class="text-white mt-4">We are a residential interior design firm located in Portland. Our boutique-studio offers more than</p>
+    </div>
+
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Services</h5>
+        <a href="" class="text-decoration-none">Bonus program</a>
+        <a href="" class="text-decoration-none">Gift cards</a>
+        <a href="" class="text-decoration-none">Credit and payment</a>
+        <a href="" class="text-decoration-none">Service contracts</a>
+        <a href="" class="text-decoration-none">Non-cash account</a>
+        <a href="" class="text-decoration-none">Payment</a>
+    </div>
+
+    <div class="col d-flex flex-column gap-4">
+        <h5 class="text-white fw-bold">Assistance to the buyer</h5>
+        <a href="" class="text-decoration-none">Find an order</a>
+        <a href="" class="text-decoration-none">Terms of delivery</a>
+        <a href="" class="text-decoration-none">Exchange and return of goods</a>
+        <a href="" class="text-decoration-none">Guarantee</a>
+        <a href="" class="text-decoration-none">Frequently asked questions</a>
+        <a href="" class="text-decoration-none">Terms of use of the site</a>
+    </div>
+    <div class="mt-5 d-flex align-items-center gap-5">
+        <a href=""><i class="fa-brands fa-twitter fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-facebook-f fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok fs-5 text-white"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fs-5 text-white"></i></a>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="cart.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
